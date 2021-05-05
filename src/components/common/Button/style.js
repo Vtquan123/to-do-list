@@ -2,8 +2,12 @@ import { COLORS } from '../../../themes/common'
 
 const style = () => ({
   button: {
-    color: COLORS.primary.primaryWhite,
+    color: COLORS.text.white,
+    background: COLORS.secondary.secondaryBlue,
     textTransform: 'capitalize',
+    '&:hover': {
+      background: COLORS.secondary.secondaryBlue,
+    },
   },
   large: {
     padding: '15px 30px',
@@ -11,7 +15,7 @@ const style = () => ({
     fontSize: 20,
   },
   medium: {
-    padding: '10px 25px',
+    padding: '8px 25px',
     borderRadius: 30,
     fontSize: 14,
   },
